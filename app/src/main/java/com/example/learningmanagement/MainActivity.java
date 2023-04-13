@@ -1,14 +1,65 @@
 package com.example.learningmanagement;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProvider;
 
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.Toast;
+
+import com.example.learningmanagement.databinding.ActivityMainBinding;
+import com.example.learningmanagement.model.Category;
+import com.example.learningmanagement.model.Course;
+import com.example.learningmanagement.viewmodel.MainActivityViewModel;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+
+    // creating instances
+    private MainActivityViewModel mainActivityViewModel;
+    private ArrayList<Category> categoriesList;
+    private ActivityMainBinding activityMainBinding;
+    private MainActivityClickHandler handlers;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mainActivityViewModel = new ViewModelProvider(this).get(MainActivityViewModel.class);
+
+        activityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+        handlers = new MainActivityClickHandler();
+        activityMainBinding.setClickHandlers(handlers);
+
+        mainActivityViewModel.getAllCategories().observe(this, new Observer<List<Category>>() {
+            @Override
+            public void onChanged(List<Category> categories) {
+                for (Category category: categories) {
+                    Log.i("TAG", category.getCategoryName());
+                }
+            }
+        });
+
+        mainActivityViewModel.getCoursesOfSelectedCategory(1).observe(this, new Observer<List<Course>>() {
+            @Override
+            public void onChanged(List<Course> courses) {
+                for (Course course: courses) {
+                    Log.v("TAG", course.getCourseName());
+                }
+            }
+        });
+    }
+    
+    
+    public class MainActivityClickHandler {
+        public void onFabClicked(View view) {
+            Toast.makeText(getApplicationContext(), "FAB Clicked", Toast.LENGTH_SHORT).show();
+        }
     }
 }
