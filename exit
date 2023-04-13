@@ -1,0 +1,47 @@
+[33mcommit 5b299ce5f6605ff957051f6018d8ed7564b424bd[m[33m ([m[1;36mHEAD -> [m[1;32mmain-merger[m[33m)[m
+Author: Darron Tacio Moraes <111967762+darronmoraes@users.noreply.github.com>
+Date:   Thu Apr 13 13:11:06 2023 +0530
+
+    #added spinner item and content main layout, and modified main class
+
+[33mcommit 5659aa406fe03d4641ea8b0d2e7c2dc513d6171c[m
+Author: Darron Tacio Moraes <111967762+darronmoraes@users.noreply.github.com>
+Date:   Thu Apr 13 10:08:18 2023 +0530
+
+    modified main xml file with data binding and click handlers for FAB
+
+[33mcommit 5bcae74f72cb3f7a03650495dfda928ab10e6a74[m[33m ([m[1;31morigin/main-merger[m[33m)[m
+Author: Darron Tacio Moraes <111967762+darronmoraes@users.noreply.github.com>
+Date:   Thu Apr 13 09:47:37 2023 +0530
+
+    added view model #MainActivityViewModel, some codes
+
+[33mcommit b9a85d5876efe6beed6c1dafca17bb32975beba3[m
+Author: Darron Tacio Moraes <111967762+darronmoraes@users.noreply.github.com>
+Date:   Thu Apr 13 09:33:25 2023 +0530
+
+    added repo #courseShopRepo.class under one class itself
+
+[33mcommit 6cc4de18574cf76743f49648a9a89c40fb2182a8[m
+Author: Darron Tacio Moraes <111967762+darronmoraes@users.noreply.github.com>
+Date:   Thu Apr 13 01:16:54 2023 +0530
+
+    #added room database and singleton pattern functionality callback
+
+[33mcommit 40080aa0fdc58f56c1d88edcbe4b6ab3ad30e85c[m
+Author: Darron Tacio Moraes <111967762+darronmoraes@users.noreply.github.com>
+Date:   Thu Apr 13 01:03:36 2023 +0530
+
+    #added Data Access Object for category and course
+
+[33mcommit 40441d222e3959b2b2004f61e2773e6fc87684b4[m
+Author: Darron Tacio Moraes <111967762+darronmoraes@users.noreply.github.com>
+Date:   Thu Apr 13 00:50:57 2023 +0530
+
+    #added entities category and course classes
+
+[33mcommit 2c72064e1e1e592c96994052ef7ca86f0002aeb6[m
+Author: Darron Tacio Moraes <111967762+darronmoraes@users.noreply.github.com>
+Date:   Thu Apr 13 00:40:39 2023 +0530
+
+    #added entities category and course classes
