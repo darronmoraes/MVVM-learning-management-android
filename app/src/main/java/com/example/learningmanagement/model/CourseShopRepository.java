@@ -40,7 +40,7 @@ public class CourseShopRepository {
     }
 
     // method to insert category
-    private void insertCategory(Category category) {
+    public void insertCategory(Category category) {
         ExecutorService executor = Executors.newSingleThreadExecutor();
         Handler handler = new Handler(Looper.getMainLooper());
         executor.execute(new Runnable() {
@@ -55,7 +55,7 @@ public class CourseShopRepository {
     }
 
     // method to insert course
-    private void insertCourse(Course course) {
+    public void insertCourse(Course course) {
         ExecutorService executor = Executors.newSingleThreadExecutor();
         Handler handler = new Handler(Looper.getMainLooper());
         executor.execute(new Runnable() {
@@ -70,7 +70,7 @@ public class CourseShopRepository {
     }
 
     // method to insert course
-    private void deleteCategory(Category category) {
+    public void deleteCategory(Category category) {
         ExecutorService executor = Executors.newSingleThreadExecutor();
         Handler handler = new Handler(Looper.getMainLooper());
         executor.execute(new Runnable() {
@@ -85,7 +85,7 @@ public class CourseShopRepository {
     }
 
     // method to insert course
-    private void deleteCourse(Course course) {
+    public void deleteCourse(Course course) {
         ExecutorService executor = Executors.newSingleThreadExecutor();
         Handler handler = new Handler(Looper.getMainLooper());
         executor.execute(new Runnable() {
@@ -100,7 +100,7 @@ public class CourseShopRepository {
     }
 
     // method to insert course
-    private void updateCategory(Category category) {
+    public void updateCategory(Category category) {
         ExecutorService executor = Executors.newSingleThreadExecutor();
         Handler handler = new Handler(Looper.getMainLooper());
         executor.execute(new Runnable() {
@@ -115,7 +115,7 @@ public class CourseShopRepository {
     }
 
     // method to insert course
-    private void updateCourse(Course course) {
+    public void updateCourse(Course course) {
         ExecutorService executor = Executors.newSingleThreadExecutor();
         Handler handler = new Handler(Looper.getMainLooper());
         executor.execute(new Runnable() {
